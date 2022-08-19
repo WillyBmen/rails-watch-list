@@ -1,1 +1,57 @@
-// Specific CSS for your home-page
+$bleu_ciel: #00D1FF;
+$corail:#FF5459;
+
+
+
+
+.header {
+  background: url("banner.jpeg");
+  object-fit: cover;
+  padding: 60px;
+  margin-bottom: 24px;
+  height: 200px;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.movie-list{
+  position: relative;
+
+}
+
+.list{
+display:flex;
+flex-wrap: wrap;
+column-gap: 20px;
+margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.button-create-new{
+background-color: $corail;
+padding: 8px;
+color: #00D1FF;
+border-radius: 20px;
+}
+
+
+.name{
+color: #FF5459;
+text-transform: capitalize;
+font-size: 8px;
+font-size: large;
+}
+
+a{
+  text-decoration: none;
+}

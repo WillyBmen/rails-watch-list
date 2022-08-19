@@ -1,7 +1,21 @@
-<h1>Movie lists</h1>
-<ul>
-<% @lists.each do |list| %>
-<li><%= link_to list.name, list_path(list) %></li>
-<% end %>
-</ul>
-<p><%= link_to "create new", new_list_path(@list) %><p>
+<div>
+  <div class="header">
+    <h1>Movie lists</h1>
+  </div>
+  <div class ="list">
+      <% @lists.each do |list| %>
+    <div class="card">
+    <div class="name">
+      <%= link_to list.name, list_path(list) %>
+      </div>
+        <%= image_tag "it.jpeg", alt: "Le Wagon", width: 200 %>
+      <div class="info">
+      <p>TREASURE</p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <p></p>
+  <p></p>
+  <a href="<%= new_list_path(@list) %>" class="button-create-new">Create New</a>
+</div>
